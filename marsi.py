@@ -10,9 +10,15 @@ while True:
     for i in range(3):
         guess = int(input())
         guesses.append(guess)
+        
     if guesses == locations:
-        print()
-        break
+        if sum(weights) == 713:
+            print()
+            print("locations")
+            break
+        else:
+            print()
+        
     else:
         print()
         locations = [random.randint(1, 10) for _ in range(3)]
