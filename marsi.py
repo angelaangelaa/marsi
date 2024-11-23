@@ -15,3 +15,4 @@ while True:
         break
     else:
         print()
+        locations = [random.randint(1, 10) for _ in range(3)]
